@@ -1,6 +1,6 @@
 export const ROUTE = {
   MANAGEMENT: 'management',
   NOT_FOUND: 'not-found',
-  PORTFOLIO: 'portfolio',
+  PORTFOLIO: '',
   ANIMATION: 'animation',
 };

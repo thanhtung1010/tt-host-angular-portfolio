@@ -1,2 +1,2 @@
-declare module 'portfolio/component';
+declare module 'portfolio/*';
 // declare module 'management/component';

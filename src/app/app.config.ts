@@ -14,16 +14,5 @@ export function HTTPLoaderFactory(http: HttpClient) {
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes),
-    importProvidersFrom([
-      TranslateModule.forRoot({
-        defaultLanguage: environment.defaultLang,
-        loader: {
-          provide: TranslateLoader,
-          useFactory: HTTPLoaderFactory,
-          deps: [HttpClient],
-        },
-      }),
-    ]),
-    provideHttpClient(),
   ]
 };
