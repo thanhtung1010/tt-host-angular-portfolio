@@ -1,2 +1,2 @@
-declare module 'portfolio/*';
+declare module '@tt-portfolio/*';
 // declare module 'management/component';

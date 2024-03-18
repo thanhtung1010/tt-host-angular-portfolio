@@ -4,7 +4,7 @@ import { ROUTE } from './_config/_enums/route.constant';
 export const routes: Routes = [
   {
     path: ROUTE.PORTFOLIO,
-    loadChildren: () => import('portfolio/module').then(c => c.AppModule),
+    loadChildren: () => import('@tt-portfolio/module').then(c => c.AppModule),
   },
   // {
   //   path: ROUTE.MANAGEMENT,
