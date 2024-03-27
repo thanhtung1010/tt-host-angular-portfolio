@@ -1,5 +1,5 @@
 {
-  "name": "tt-angular-shell",
+  "name": "tt-host-angular-portfolio",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -22,6 +22,7 @@
     "@angular/router": "17.2.0",
     "@ngx-translate/core": "15.0.0",
     "@ngx-translate/http-loader": "8.0.0",
+    "angular-svg-icon": "16.0.0",
     "firebase": "10.8.1",
     "ng-zorro-antd": "17.2.0",
     "rxjs": "7.8.0",
@@ -49,6 +50,7 @@
     "karma-jasmine-html-reporter": "2.1.0",
     "ngx-build-plus": "17.0.0",
     "typescript": "5.3.2",
-    "postcss": "8.4.29"
+    "postcss": "8.4.29",
+    "tailwindcss": "3.3.5"
   }
 }

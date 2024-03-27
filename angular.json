@@ -3,7 +3,7 @@
 	"version": 1,
 	"newProjectRoot": "projects",
 	"projects": {
-		"tt-angular-shell": {
+		"tt-host-angular-portfolio": {
 			"projectType": "application",
 			"schematics": {
 				"@schematics/angular:component": {
@@ -17,7 +17,7 @@
 				"build": {
 					"builder": "ngx-build-plus:browser",
 					"options": {
-						"outputPath": "dist/tt-angular-shell",
+						"outputPath": "dist/tt-host-angular-portfolio",
 						"index": "src/index.html",
 						"polyfills": [
 							"zone.js"
@@ -66,11 +66,11 @@
 					"builder": "ngx-build-plus:dev-server",
 					"configurations": {
 						"production": {
-							"buildTarget": "tt-angular-shell:build:production",
+							"buildTarget": "tt-host-angular-portfolio:build:production",
 							"extraWebpackConfig": "webpack.prod.config.js"
 						},
 						"development": {
-							"buildTarget": "tt-angular-shell:build:development"
+							"buildTarget": "tt-host-angular-portfolio:build:development"
 						}
 					},
 					"defaultConfiguration": "development",
@@ -83,7 +83,7 @@
 				"extract-i18n": {
 					"builder": "ngx-build-plus:extract-i18n",
 					"options": {
-						"buildTarget": "tt-angular-shell:build",
+						"buildTarget": "tt-host-angular-portfolio:build",
 						"extraWebpackConfig": "webpack.config.js"
 					}
 				},
