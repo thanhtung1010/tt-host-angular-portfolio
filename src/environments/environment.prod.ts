@@ -1,17 +1,18 @@
-export const environment = {
+import { IAppConfig } from '@tt-library-angular-porfolio';
+
+export const environment: IAppConfig = {
   production: true,
   defaultLang: 'vi',
   cookieStorageLangKey: '_lang',
   cookieStorageDeviceIdKey: '_deviceId',
-  TOKEN_KEY: '_token',
-  ASSETS_URL: 'https://pi-portfolio-livid.vercel.app/',
-  ASSETS_REACT_MANAGEMENT_URL: 'https://management-reactjs-seven.vercel.app/',
-  API_URL: 'https://spending-management.up.railway.app/',
+  tokenKey: '_token',
+  assetsUrl: 'https://pi-portfolio-livid.vercel.app/',
+  apiUrl: 'https://spending-management.up.railway.app/',
   email: 'trinhthanhtung1010@gmail.com',
   phoneNumber: '+84836450670',
   defaultPageSize: 10,
-  TIME_OUT_MS: 180000,
-  SETTING_FORMAT: {
+  timeoutMs: 180000,
+  settingFormat: {
     dateTime: {
       date: "DD/MM/YYYY",
       time: "HH:mm:ss a",
@@ -20,7 +21,7 @@ export const environment = {
       portfolioDateResponsive: "yyyy"
     },
   },
-  FIREBASE_CONFIG: {
+  firebaseConfig: {
     apiKey: "AIzaSyADMzU8kiEIosqyvJiopulcmF2ff3ppCus",
     authDomain: "my-project-8c416.firebaseapp.com",
     projectId: "my-project-8c416",
@@ -29,10 +30,10 @@ export const environment = {
     appId: "1:468318730006:web:6de7ec8edebad31bb60237",
     measurementId: "G-P115SDW2ZT"
   },
-  GOOGLE_CONFIG: {
+  googleConfig: {
     downloadCV: "https://drive.google.com/uc?export=download&id=13GFK_OWfcxseMy5gjG2TyLLbIPcc8LML",
   },
-  WEB_COMPONENT: {
+  remoteModuleUrl: {
     reactManagement: "https://management-reactjs-seven.vercel.app/disk/static/js/main.c06c346.js",
   },
 }
