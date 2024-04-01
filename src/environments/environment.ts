@@ -1,4 +1,4 @@
-import { IAppConfig } from '@tt-library-angular-porfolio';
+import { IAppConfig } from 'tt-library-angular-porfolio';
 
 export const environment: IAppConfig = {
   production: false,

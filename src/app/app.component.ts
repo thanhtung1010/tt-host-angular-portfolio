@@ -2,7 +2,7 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { environment } from '../environments/environment';
-import { AppLoadingHelper, LangService } from '@tt-library-angular-porfolio';
+import { AppLoadingHelper, LangService } from 'tt-library-angular-porfolio';
 import { Title } from '@angular/platform-browser';
 import { TranslateService } from '@ngx-translate/core';
 

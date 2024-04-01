@@ -9,7 +9,7 @@ import { environment } from '../environments/environment';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule, provideHttpClient, withInterceptors } from '@angular/common/http';
 import { AngularSvgIconModule } from 'angular-svg-icon';
-import { StandarloneHttpLogInterceptor, SharedModule } from '@tt-library-angular-porfolio';
+import { StandarloneHttpLogInterceptor, SharedModule } from 'tt-library-angular-porfolio';
 
 export function HTTPLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
