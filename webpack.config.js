@@ -4,6 +4,7 @@ module.exports = withModuleFederationPlugin({
 
   remotes: {
     "@tt-portfolio": "http://localhost:8081/remoteEntry.js",
+    // "@tt-auth": "http://localhost:8082/remoteEntry.js",
   },
 
   shared: {
