@@ -59,13 +59,13 @@
         "plugin:@angular-eslint/template/recommended"
       ],
       "rules": {
-        "max-len": [
-          "error",
-          {
-            "code": 200,
-            "tabWidth": 2
-          }
-        ]
+        // "max-len": [
+        //   "error",
+        //   {
+        //     "code": 200,
+        //     "tabWidth": 2
+        //   }
+        // ]
       }
     },
     {
