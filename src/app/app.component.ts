@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { AngularSvgIconModule } from 'angular-svg-icon';
-import { environment, testEnv } from '../environments/environment';
+import { environment } from '../environments/environment';
 import { AppLoadingHelper, LangService } from 'tt-library-angular-porfolio';
 import { Title } from '@angular/platform-browser';
 import { TranslateService } from '@ngx-translate/core';
@@ -27,7 +27,6 @@ export class AppComponent implements OnInit, AfterViewInit {
   ) {}
 
   ngOnInit(): void {
-    testEnv();
     this.initService();
 
     this.translateSer.onLangChange.subscribe(resp => {
