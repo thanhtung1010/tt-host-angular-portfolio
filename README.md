@@ -41,27 +41,28 @@ This project was used with:
 
 ### Dev dependencies
 
-|                                        |        |
-| -------------------------------------- | ------ |
-| @angular-devkit/build-angular          | 17.2.2 |
-| @angular-eslint/builder                | 17.2.1 |
-| @angular-eslint/eslint-plugin          | 17.2.1 |
-| @angular-eslint/eslint-plugin-template | 17.2.1 |
-| @angular-eslint/schematics             | 17.2.1 |
-| @angular-eslint/template-parser        | 17.2.1 |
-| @angular/cli                           | 17.2.2 |
-| @angular/compiler-cli                  | 17.2.0 |
-| @types/jasmine                         | 5.1.0  |
-| @typescript-eslint/eslint-plugin       | 7.1.1  |
-| @typescript-eslint/parser              | 7.1.1  |
-| eslint                                 | 8.57.0 |
-| jasmine-core                           | 5.1.0  |
-| karma                                  | 6.4.0  |
-| karma-chrome-launcher                  | 3.2.0  |
-| karma-coverage                         | 2.2.0  |
-| karma-jasmine                          | 5.1.0  |
-| karma-jasmine-html-reporter            | 2.1.0  |
-| ngx-build-plus                         | 17.0.0 |
-| postcss                                | 8.4.29 |
-| tailwindcss                            | 3.3.5  |
-| typescript                             | 5.3.2  |
+|                                        |         |
+| -------------------------------------- | ------- |
+| @angular-devkit/build-angular          | 17.2.2  |
+| @angular-eslint/builder                | 17.2.1  |
+| @angular-eslint/eslint-plugin          | 17.2.1  |
+| @angular-eslint/eslint-plugin-template | 17.2.1  |
+| @angular-eslint/schematics             | 17.2.1  |
+| @angular-eslint/template-parser        | 17.2.1  |
+| @angular/cli                           | 17.2.2  |
+| @angular/compiler-cli                  | 17.2.0  |
+| @types/jasmine                         | 5.1.0   |
+| @types/node                            | 20.12.7 |
+| @typescript-eslint/eslint-plugin       | 7.1.1   |
+| @typescript-eslint/parser              | 7.1.1   |
+| eslint                                 | 8.57.0  |
+| jasmine-core                           | 5.1.0   |
+| karma                                  | 6.4.0   |
+| karma-chrome-launcher                  | 3.2.0   |
+| karma-coverage                         | 2.2.0   |
+| karma-jasmine                          | 5.1.0   |
+| karma-jasmine-html-reporter            | 2.1.0   |
+| ngx-build-plus                         | 17.0.0  |
+| postcss                                | 8.4.29  |
+| tailwindcss                            | 3.3.5   |
+| typescript                             | 5.3.2   |

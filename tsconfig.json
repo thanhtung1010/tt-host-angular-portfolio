@@ -27,7 +27,7 @@
       //   "../tt-library-angular-porfolio/dist/tt-library-angular-porfolio/"
       // ]
     },
-    "types": ["node"]
+    "types": ["node", "zone.js"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
