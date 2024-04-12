@@ -1,5 +1,9 @@
 import { IAppConfig } from 'tt-library-angular-porfolio';
 
+export function testEnv() {
+  console.log(process.env);
+}
+
 export const environment: IAppConfig = {
   production: true,
   defaultLang: 'vi',
