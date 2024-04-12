@@ -26,7 +26,8 @@
       "tt-library-angular-porfolio": [
         "../tt-library-angular-porfolio/dist/tt-library-angular-porfolio/"
       ]
-    }
+    },
+    "types": ["node"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
