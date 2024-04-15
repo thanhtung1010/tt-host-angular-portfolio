@@ -27,8 +27,6 @@ export class AppComponent implements OnInit, AfterViewInit {
   ) {}
 
   ngOnInit(): void {
-    console.log(environment['TEST_KEY']);
-    console.log(environment['TEST_KEY_NUMBER']);
     this.initService();
 
     this.translateSer.onLangChange.subscribe(resp => {
