@@ -1,4 +1,11 @@
-import { IAppConfig } from 'tt-library-angular-porfolio';
+const fs = require('fs');
+const path = require('path');
+const { env } = require('process');
+const successColor = '\x1b[32m%s\x1b[0m';
+const checkSign = '\u{2705}';
+const dotenv = require('dotenv').config({path: 'src/.env'}); ;
+
+const envFile = `import { IAppConfig } from 'tt-library-angular-porfolio';
 
 export const environment: IAppConfig = {
   production: true,
@@ -36,6 +43,16 @@ export const environment: IAppConfig = {
   remoteModuleUrl: {
     reactManagement: "https://management-reactjs-seven.vercel.app/disk/static/js/main.c06c346.js",
   },
-  TEST_KEY: 'undefined',
-  TEST_KEY_NUMBER: undefined,
+  TEST_KEY: '${env['TEST_KEY']}',
+  TEST_KEY_NUMBER: ${env['TEST_KEY_NUMBER']},
 }
+`;
+const targetPath = path.join(__dirname, './src/environments/environment.prod.ts');
+fs.writeFile(targetPath, envFile, (err) => {
+    if (err) {
+        console.error(err);
+        throw err;
+    } else {
+        console.log(successColor, `${checkSign} Successfully generated environment.prod.ts`);
+    }
+});

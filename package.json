@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve -o",
-    "build": "ng build --configuration production",
+    "build": "node -r dotenv/config env.conf.js && ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"
@@ -40,6 +40,7 @@
     "@angular/cli": "17.2.2",
     "@angular/compiler-cli": "17.2.0",
     "@types/jasmine": "5.1.0",
+    "@types/node": "20.12.7",
     "@typescript-eslint/eslint-plugin": "7.1.1",
     "@typescript-eslint/parser": "7.1.1",
     "eslint": "8.57.0",
