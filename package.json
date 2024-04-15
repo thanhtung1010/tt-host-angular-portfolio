@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve -o",
-    "build": "node -r dotenv/config env.conf.js && ng build --configuration production",
+    "build": "node -r dotenv/config env.conf.js && ng build --configuration prod",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"
