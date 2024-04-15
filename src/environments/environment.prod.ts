@@ -6,8 +6,8 @@ export const environment: IAppConfig = {
   cookieStorageLangKey: '_lang',
   cookieStorageDeviceIdKey: '_deviceId',
   tokenKey: '_token',
-  assetsUrl: 'https://pi-portfolio-livid.vercel.app/',
-  apiUrl: 'https://spending-management.up.railway.app/',
+  assetsUrl: 'http://localhost:8080/',
+  apiUrl: 'http://localhost:9090/',
   email: 'trinhthanhtung1010@gmail.com',
   phoneNumber: '+84836450670',
   defaultPageSize: 10,
@@ -34,8 +34,6 @@ export const environment: IAppConfig = {
     downloadCV: "https://drive.google.com/uc?export=download&id=13GFK_OWfcxseMy5gjG2TyLLbIPcc8LML",
   },
   remoteModuleUrl: {
-    reactManagement: "https://management-reactjs-seven.vercel.app/disk/static/js/main.c06c346.js",
+    reactManagement: "http://localhost:3000/static/js/bundle.js",
   },
-  TEST_KEY: 'undefined',
-  TEST_KEY_NUMBER: undefined,
 }

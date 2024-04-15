@@ -43,8 +43,6 @@ export const environment: IAppConfig = {
   remoteModuleUrl: {
     reactManagement: "https://management-reactjs-seven.vercel.app/disk/static/js/main.c06c346.js",
   },
-  TEST_KEY: '${env['TEST_KEY']}',
-  TEST_KEY_NUMBER: ${env['TEST_KEY_NUMBER']},
 }
 `;
 const targetPath = path.join(__dirname, './src/environments/environment.prod.ts');

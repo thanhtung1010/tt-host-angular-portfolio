@@ -36,6 +36,4 @@ export const environment: IAppConfig = {
   remoteModuleUrl: {
     reactManagement: "http://localhost:3000/static/js/bundle.js",
   },
-  TEST_KEY: '',
-  TEST_KEY_NUMBER: 0,
 };
