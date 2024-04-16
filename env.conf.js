@@ -12,7 +12,7 @@ const numberField = [
 ];
 const envConfig = process.env;
 
-for (let field of envConfig) {
+for (let field in envConfig) {
   if (envFile.includes(field)) {
     if (numberField.inludes(field)) {
       field = "'" + field + "'";
