@@ -1,39 +1,37 @@
-import { IAppConfig } from 'tt-library-angular-porfolio';
-
-export const environment: IAppConfig = {
+export const environment: any = {
   production: true,
-  defaultLang: 'vi',
-  cookieStorageLangKey: '_lang',
-  cookieStorageDeviceIdKey: '_deviceId',
-  tokenKey: '_token',
-  assetsUrl: 'http://localhost:8080/',
-  apiUrl: 'http://localhost:9090/',
-  email: 'trinhthanhtung1010@gmail.com',
-  phoneNumber: '+84836450670',
-  defaultPageSize: 10,
-  timeoutMs: 180000,
+  defaultLang: '_DEFAULT_LANG_',
+  cookieStorageLangKey: '_COOKIE_STORAGE_LANG_KEY_',
+  cookieStorageDeviceIdKey: '_COOKIE_STORAGE_DEVICE_ID_KEY_',
+  tokenKey: '_TOKEN_KEY_',
+  assetsUrl: '_ASSETS_URL_',
+  apiUrl: '_API_URL_',
+  email: '_EMAIL_',
+  phoneNumber: '_PHONE_NUMBER_',
+  defaultPageSize: '_DEFAULT_PAGE_SIZE_',
+  timeoutMs: '_TIMEOUT_MS_',
   settingFormat: {
     dateTime: {
-      date: "DD/MM/YYYY",
-      time: "HH:mm:ss a",
-      dateTime: "DD/MM/YYYY HH:mm:ss",
-      portfolioDate: "MMM - yyyy",
-      portfolioDateResponsive: "yyyy"
+      date: '_SETTING_FORMAT_DATE_TIME_DATE_',
+      time: '_SETTING_FORMAT_DATE_TIME_TIME_',
+      dateTime: '_SETTING_FORMAT_DATE_TIME_DATE_TIME_',
+      portfolioDate: '_SETTING_FORMAT_DATE_TIME_PORTFOLIO_DATE_',
+      portfolioDateResponsive: '_SETTING_FORMAT_DATE_TIME_PORTFOLIO_DATE_RESPONSIVE_'
     },
   },
   firebaseConfig: {
-    apiKey: "AIzaSyADMzU8kiEIosqyvJiopulcmF2ff3ppCus",
-    authDomain: "my-project-8c416.firebaseapp.com",
-    projectId: "my-project-8c416",
-    storageBucket: "my-project-8c416.appspot.com",
-    messagingSenderId: "468318730006",
-    appId: "1:468318730006:web:6de7ec8edebad31bb60237",
-    measurementId: "G-P115SDW2ZT"
+    apiKey: '_FIREBASE_CONFIG_API_KEY_',
+    authDomain: '_FIREBASE_CONFIG_AUTH_DOMAIN_',
+    projectId: '_FIREBASE_CONFIG_PROJECT_ID_',
+    storageBucket: '_FIREBASE_CONFIG_STORAGE_BUCKET_',
+    messagingSenderId: '_FIREBASE_CONFIG_MESSAGING_SENDER_ID_',
+    appId: '_FIREBASE_CONFIG_APP_ID_',
+    measurementId: '_FIREBASE_CONFIG_MEASUREMENT_ID_'
   },
   googleConfig: {
-    downloadCV: "https://drive.google.com/uc?export=download&id=13GFK_OWfcxseMy5gjG2TyLLbIPcc8LML",
+    downloadCV: 'GOOGLE_CONFIG_DOWNLOAD_CV',
   },
   remoteModuleUrl: {
-    reactManagement: "http://localhost:3000/static/js/bundle.js",
+    reactManagement: '_REMOTE_MODULE_URL_REACT_MANAGEMENT_',
   },
 }
