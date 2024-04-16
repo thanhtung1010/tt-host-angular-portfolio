@@ -2,7 +2,7 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { environment } from '../environments/environment';
-import { AppLoadingHelper, LangService } from 'tt-library-angular-porfolio';
+import { AppConfigService, AppLoadingHelper, DeviceIdService, LangService, MenuService } from 'tt-library-angular-porfolio';
 import { Title } from '@angular/platform-browser';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -24,6 +24,9 @@ export class AppComponent implements OnInit, AfterViewInit {
     private titleSer: Title,
     private translateSer: TranslateService,
     private langSer: LangService,
+    private appConfig: AppConfigService,
+    private deviceIdSer: DeviceIdService,
+    private menuService: MenuService,
   ) {}
 
   ngOnInit(): void {
@@ -37,7 +40,10 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
 
   initService() {
+    this.appConfig.initAppConfig();
     this.langSer.init();
+    this.deviceIdSer.init();
+    this.menuService.init();
   }
 
   ngAfterViewInit(): void {

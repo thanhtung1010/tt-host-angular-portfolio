@@ -2,14 +2,14 @@ import { IAppConfig } from 'tt-library-angular-porfolio';
 
 export const environment: IAppConfig = {
   production: true,
-  defaultLang: 'vi',
-  cookieStorageLangKey: '_lang',
-  cookieStorageDeviceIdKey: '_deviceId',
-  tokenKey: '_token',
-  assetsUrl: 'https://pi-portfolio-livid.vercel.app/',
-  apiUrl: 'https://spending-management.up.railway.app/',
-  email: 'trinhthanhtung1010@gmail.com',
-  phoneNumber: '+84836450670',
+  defaultLang: '',
+  cookieStorageLangKey: '',
+  cookieStorageDeviceIdKey: '',
+  tokenKey: '',
+  assetsUrl: '',
+  apiUrl: '',
+  email: '',
+  phoneNumber: '',
   defaultPageSize: 10,
   timeoutMs: 180000,
   settingFormat: {
@@ -22,18 +22,19 @@ export const environment: IAppConfig = {
     },
   },
   firebaseConfig: {
-    apiKey: "AIzaSyADMzU8kiEIosqyvJiopulcmF2ff3ppCus",
-    authDomain: "my-project-8c416.firebaseapp.com",
-    projectId: "my-project-8c416",
-    storageBucket: "my-project-8c416.appspot.com",
-    messagingSenderId: "468318730006",
-    appId: "1:468318730006:web:6de7ec8edebad31bb60237",
-    measurementId: "G-P115SDW2ZT"
+    apiKey: "",
+    authDomain: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: "",
+    measurementId: ""
   },
   googleConfig: {
-    downloadCV: "https://drive.google.com/uc?export=download&id=13GFK_OWfcxseMy5gjG2TyLLbIPcc8LML",
+    downloadCV: "",
   },
   remoteModuleUrl: {
-    reactManagement: "https://management-reactjs-seven.vercel.app/disk/static/js/main.c06c346.js",
+    reactManagement: "",
+    angularPortfolio: "",
   },
 }
