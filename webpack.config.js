@@ -3,7 +3,7 @@ const { shareAll, withModuleFederationPlugin } = require('@angular-architects/mo
 module.exports = withModuleFederationPlugin({
 
   remotes: {
-    "@tt-portfolio": `${process.env}remoteEntry.js`,
+    "@tt-portfolio": `${process.env['_REMOTE_MODULE_URL_ANGULAR_PORTFOLIO_']}remoteEntry.js`,
     // "@tt-auth": "http://localhost:8082/remoteEntry.js",
   },
 
