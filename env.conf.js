@@ -18,7 +18,7 @@ for (let field in envConfig) {
     if (numberField.includes(field)) {
       field = "'" + field + "'";
     }
-    console.log('config value:', envConfig[field]);
+
     envFile = envFile.replace(field, envConfig[field]);
   }
 }
