@@ -11,9 +11,9 @@ const numberField = [
   '_TIMEOUT_MS_'
 ];
 const envConfig = process.env;
-console.log('envConfig:', envConfig);
-console.log('envFile before:', envFile);
+
 for (let field in envConfig) {
+  console.log(envFile.includes(field));
   if (envFile.includes(field)) {
     if (numberField.includes(field)) {
       field = "'" + field + "'";
@@ -21,7 +21,6 @@ for (let field in envConfig) {
     envFile.replace(field, envConfig[field]);
   }
 }
-console.log('envFile after:', envFile);
 
 const targetPath = path.join(__dirname, './src/environments/environment.prod.ts');
 fs.writeFile(targetPath, envFile, (err) => {
