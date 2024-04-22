@@ -13,11 +13,13 @@ const numberField = [
 const envConfig = process.env;
 
 for (let field in envConfig) {
-  console.log(envFile.includes(field));
+
   if (envFile.includes(field)) {
     if (numberField.includes(field)) {
       field = "'" + field + "'";
     }
+    console.log('field:', field);
+    console.log('config value:', envConfig[field]);
     envFile.replace(field, envConfig[field]);
   }
 }
