@@ -11,7 +11,8 @@ const numberField = [
   '_TIMEOUT_MS_'
 ];
 const envConfig = process.env;
-
+console.log(envConfig);
+console.log(envFile);
 for (let field in envConfig) {
   if (envFile.includes(field)) {
     if (numberField.includes(field)) {
