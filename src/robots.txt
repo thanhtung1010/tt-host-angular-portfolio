@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /management/
+Disallow: /readme.html
+Disallow: /license.txt
+Allow: /home/
+Allow: /about-me/
+Sitemap: https://angular.ganatan.com/sitemap.xml
