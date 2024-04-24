@@ -42,7 +42,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   initService() {
     this.appConfig.initAppConfig();
     this.langSer.init();
-    this.deviceIdSer.init();
+    // this.deviceIdSer.init();
     this.menuService.init();
   }
 

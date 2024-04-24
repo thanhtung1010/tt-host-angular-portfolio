@@ -3,9 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Tung</title>
+  <title>Portfolio - Trịnh Thanh Tùng</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hi there!! This is my portfolio. My name is Tùng, I’m Front-end Developer.">
+  <meta name="description" content="With VS Code and coffee, i’ll help designers and client bring their ideas to life.">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,6 +56,26 @@
     .plash-screen-img .loading-green {
       stroke-linejoin: round;
       animation: stroke-fill-green 10s infinite;
+    }
+
+    .no-script-div {
+      position: fixed;
+      top: 0;
+      background-color: #7C5A31;
+      z-index: 99999999;
+      left: 0;
+      width: 100%;
+      padding: 12px 0;
+      text-align: center;
+      color: #FEF9E8;
+      font-weight: bold;
+    }
+
+    .no-script-hr {
+      width: 100%;
+      background-color: #FEF9E8;
+      height: 1px;
+      margin: 12px;
     }
 
     @keyframes stroke-fill-red {
@@ -181,23 +203,9 @@
     </div>
   </div>
   <noscript>
-    <div style="
-    position: fixed;
-    top: 0;
-    background-color: #7C5A31;
-    z-index: 99999999;
-    left: 0;
-    width: 100%;
-    padding: 12px 0;
-    text-align: center;
-    color: #FEF9E8;
-    font-weight: bold;">
+    <div class="no-script-div">
       <p>Vui lòng bật javascript trên trình duyệt của bạn để tiếp tục!</p>
-      <hr style="
-    width: 100%;
-    background-color: #FEF9E8;
-    height: 1px;
-    margin: 12px;">
+      <hr class="no-script-hr">
       <p>Please turn on javascript to use this application!</p>
     </div>
   </noscript>
