@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { ROUTE } from 'tt-library-angular-porfolio';
+import { NotFoundComponent, ROUTE } from 'tt-library-angular-porfolio';
 
 export const routes: Routes = [
   {
@@ -15,8 +15,17 @@ export const routes: Routes = [
   //   loadComponent: () => import('management/component').then(c => c.AppComponent),
   // },
   {
-    path: '**',
+    path: ROUTE.NOT_FOUND,
+    component: NotFoundComponent,
+  },
+  {
+    path: '',
     pathMatch: 'full',
     redirectTo: ROUTE.PORTFOLIO,
+  },
+  {
+    path: '**',
+    pathMatch: 'full',
+    redirectTo: ROUTE.NOT_FOUND,
   },
 ];
