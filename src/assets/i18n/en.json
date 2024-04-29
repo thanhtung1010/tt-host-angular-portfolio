@@ -1,6 +1,9 @@
 {
   "SEO": {
-    "TITLE": "Portfolio - Trịnh Thanh Tùng"
+    "TITLE": "My Portfolio",
+    "TITLE_NOT_FOUND": "404 :(",
+    "TITLE_PORTPOLIO_HOME": "Portfolio - Home",
+    "TITLE_PORTPOLIO_ABOUT_ME": "Portfolio - About Me"
   },
   "LANG": {
     "VI": "Vietnamese",
