@@ -12,7 +12,7 @@ module.exports = withModuleFederationPlugin({
     "tt-library-angular-porfolio": {
       singleton: true,
       strictVersion: true,
-      requiredVersion: ">=1.0.2"
+      requiredVersion: ">=2.0.0"
     }
   },
 
