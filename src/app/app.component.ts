@@ -49,7 +49,9 @@ export class AppComponent implements OnInit, AfterViewInit {
   ngAfterViewInit(): void {
     const timeout = setTimeout(() => {
       AppLoadingHelper.Toggle(false);
+      this.menuService.scrollBody(true);
+      this.appConfig.appInit = true;
       clearTimeout(timeout);
-    }, 1000);
+    }, 3000);
   }
 }
