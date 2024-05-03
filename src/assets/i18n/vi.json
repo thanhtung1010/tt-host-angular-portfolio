@@ -81,7 +81,9 @@
     "SYSTEM_ERROR": "Error",
     "SYSTEM_SUCCESS": "Success",
     "EMPTY": "Oops! The content for this page is being updated.",
-    "NO_DATA": "No data."
+    "NO_DATA": "No data.",
+    "SKYPE_ID_COPY_SUCCESS": "Skype ID copy to clipboard",
+    "SOMTHING_WAS_WRONG": "Something was wrong"
   },
   "BUTTON": {
     "DOWNLOAD_MY_CV": "Download my CV",
