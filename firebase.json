@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/tt-host-angular-portfolio",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
