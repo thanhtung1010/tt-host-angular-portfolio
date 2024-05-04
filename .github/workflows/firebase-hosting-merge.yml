@@ -32,6 +32,3 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_MY_PROJECT_8C416 }}
           channelId: live
           projectId: my-project-8c416
-
-      - name: Deploy
-        run: firebase deploy
