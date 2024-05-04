@@ -10,6 +10,7 @@ const numberField = [
   '_DEFAULT_PAGE_SIZE_',
   '_TIMEOUT_MS_'
 ];
+console.log('env congif', process.env);
 const envConfig = process.env;
 
 for (let field in envConfig) {
