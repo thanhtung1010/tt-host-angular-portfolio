@@ -1,5 +1,6 @@
 const { shareAll, withModuleFederationPlugin } = require('@angular-architects/module-federation/webpack');
-console.log('webpack', process.env);
+const dotenv = require('dotenv').config({path: 'src/.env'});
+
 module.exports = withModuleFederationPlugin({
 
   remotes: {
