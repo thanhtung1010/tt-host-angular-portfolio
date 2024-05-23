@@ -17,7 +17,6 @@ export function HTTPLoaderFactory(http: HttpClient) {
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideRouter(routes),
     importProvidersFrom([
       BrowserModule,
       BrowserAnimationsModule,
@@ -35,6 +34,7 @@ export const appConfig: ApplicationConfig = {
         },
       }),
     ]),
+    provideRouter(routes),
     provideHttpClient(withInterceptors([StandarloneHttpLogInterceptor])),
   ]
 };
