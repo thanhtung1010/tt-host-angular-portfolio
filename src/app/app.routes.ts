@@ -8,7 +8,7 @@ export const routes: Routes = [
     path: ROUTE.PORTFOLIO,
     loadChildren: () => loadRemoteModule({
       type: 'module',
-      remoteEntry: 'http://localhost:8081/remoteEntry.js',
+      remoteEntry: `${process.env['_REMOTE_MODULE_URL_ANGULAR_PORTFOLIO_']}remoteEntry.js`,
       exposedModule: './module'
     })
     .then(m => m.AppModule)
@@ -18,7 +18,7 @@ export const routes: Routes = [
     path: ROUTE.MANAGEMENT,
     loadChildren: () => loadRemoteModule({
       type: 'module',
-      remoteEntry: 'http://localhost:8082/remoteEntry.js',
+      remoteEntry: `${process.env['_REMOTE_MODULE_URL_ANGULAR_PORTFOLIO_']}remoteEntry.js`,
       exposedModule: './module'
     })
     .then(m => m.AppModule)
