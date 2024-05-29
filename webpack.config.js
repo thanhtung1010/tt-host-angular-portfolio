@@ -3,10 +3,10 @@ const dotenv = require('dotenv').config({path: 'src/.env'});
 
 module.exports = withModuleFederationPlugin({
 
-  remotes: {
-    "@tt-portfolio": `${process.env['_REMOTE_MODULE_URL_ANGULAR_PORTFOLIO_']}remoteEntry.js`,
+  // remotes: {
+  //   "@tt-portfolio": `${process.env['_REMOTE_MODULE_URL_ANGULAR_PORTFOLIO_']}remoteEntry.js`,
     // "@tt-auth": "http://localhost:8082/remoteEntry.js",
-  },
+  // },
 
   shared: {
     ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),

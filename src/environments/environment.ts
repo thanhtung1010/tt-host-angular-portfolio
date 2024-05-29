@@ -27,8 +27,8 @@ export const environment: IAppConfig = {
     projectId: "my-project-8c416",
     storageBucket: "my-project-8c416.appspot.com",
     messagingSenderId: "468318730006",
-    appId: "1:468318730006:web:6de7ec8edebad31bb60237",
-    measurementId: "G-P115SDW2ZT"
+    appId: "1:468318730006:web:7e390a37a0e941aab60237",
+    measurementId: "G-CFZ3NPLSEF"
   },
   googleConfig: {
     downloadCV: "https://drive.google.com/uc?export=download&id=13GFK_OWfcxseMy5gjG2TyLLbIPcc8LML",
