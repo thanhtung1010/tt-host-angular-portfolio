@@ -10,6 +10,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule, provideHttpClient, withInterceptors } from '@angular/common/http';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { StandarloneHttpLogInterceptor, SharedModule } from 'tt-library-angular-porfolio';
+import { LoadDiffLibService } from './_services';
 
 export function HTTPLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -36,5 +37,7 @@ export const appConfig: ApplicationConfig = {
     ]),
     provideRouter(routes),
     provideHttpClient(withInterceptors([StandarloneHttpLogInterceptor])),
+
+    LoadDiffLibService,
   ]
 };
