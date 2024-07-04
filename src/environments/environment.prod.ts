@@ -36,5 +36,7 @@ export const environment: IAppConfig = {
   remoteModuleUrl: {
     reactManagement: "",
     angularPortfolio: "",
+    angularAuth: "",
+    vueAnimation: ""
   },
 }
