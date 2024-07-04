@@ -1,6 +1,7 @@
 import { NgModule } from "@angular/core";
 import { VueAppComponent } from "./vue-app.component";
 import { RouterModule, Routes } from "@angular/router";
+import { PageLayoutComponent } from "tt-library-angular-porfolio";
 
 const routes: Routes = [
   {
@@ -12,7 +13,10 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [VueAppComponent],
-  imports: [RouterModule.forChild(routes)]
+  imports: [
+    RouterModule.forChild(routes),
+    PageLayoutComponent,
+  ]
 })
 
 export class VueAppModule {}
