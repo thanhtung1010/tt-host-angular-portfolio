@@ -36,5 +36,7 @@ export const environment: IAppConfig = {
   remoteModuleUrl: {
     reactManagement: "http://localhost:3000/static/js/bundle.js",
     angularPortfolio: "http://localhost:8081/",
+    angularAuth: 'http://localhost:8082/',
+    vueAnimation: 'http://localhost:8084/'
   },
 };

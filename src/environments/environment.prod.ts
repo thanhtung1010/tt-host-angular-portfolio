@@ -34,5 +34,7 @@ export const environment: any = {
   remoteModuleUrl: {
     reactManagement: '_REMOTE_MODULE_URL_REACT_MANAGEMENT_',
     angularPortfolio: "_REMOTE_MODULE_URL_ANGULAR_PORTFOLIO_",
+    angularAuth: "",
+    vueAnimation: ""
   },
 }

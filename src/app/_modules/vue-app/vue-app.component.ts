@@ -2,6 +2,7 @@ import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild } fr
 import { LoadDiffLibService } from '../../_services';
 import { App } from 'vue';
 import { AppConfigService } from 'tt-library-angular-porfolio';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'tt-vue-app',
@@ -22,7 +23,7 @@ export class VueAppComponent implements OnInit, OnDestroy, AfterViewInit {
   ngAfterViewInit(): void {
     this.loadLibService.loadRemoteModule({
       type: 'script',
-      remoteEntry: 'http://localhost:8084/remoteEntry.js',
+      remoteEntry: `${environment.remoteModuleUrl.vueAnimation}remoteEntry.js`,
       remoteName: 'VueApp',
       exposedModule: './component',
     }).subscribe({
