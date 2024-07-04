@@ -9,7 +9,7 @@ export const routes: Routes = [
     path: ROUTE.PORTFOLIO,
     loadChildren: () => loadRemoteModule({
       type: 'module',
-      remoteEntry: `${process.env['_REMOTE_MODULE_URL_ANGULAR_PORTFOLIO_']}remoteEntry.js`,
+      remoteEntry: `${environment.remoteModuleUrl.angularPortfolio}remoteEntry.js`,
       exposedModule: './module'
     })
     .then(m => m.AppModule)
@@ -22,7 +22,7 @@ export const routes: Routes = [
     path: ROUTE.MANAGEMENT,
     loadChildren: () => loadRemoteModule({
       type: 'module',
-      remoteEntry: `${process.env['_REMOTE_MODULE_URL_ANGULAR_PORTFOLIO_']}remoteEntry.js`,
+      remoteEntry: `${environment.remoteModuleUrl.angularAuth}remoteEntry.js`,
       exposedModule: './module'
     })
     .then(m => m.AppModule)
