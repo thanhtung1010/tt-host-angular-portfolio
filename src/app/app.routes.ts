@@ -1,6 +1,6 @@
 import { loadRemoteModule } from '@angular-architects/module-federation';
 import { Routes } from '@angular/router';
-import { NotFoundComponent, ROUTE } from 'tt-library-angular-porfolio';
+import { NotFoundComponent, ROUTE, authActiveGuard } from 'tt-library-angular-porfolio';
 import { createApp } from 'vue';
 import { environment } from '../environments/environment';
 
@@ -19,10 +19,24 @@ export const routes: Routes = [
     }),
   },
   {
-    path: ROUTE.MANAGEMENT,
+    path: ROUTE.AUTH,
     loadChildren: () => loadRemoteModule({
       type: 'module',
       remoteEntry: 'http://localhost:8082/remoteEntry.js',
+      exposedModule: './module'
+    })
+    .then(m => m.AppModule)
+    .catch(error => {
+      console.log(error);
+      location.href = `${environment.assetsUrl}/not-found`;
+    }),
+    canActivate: [authActiveGuard]
+  },
+  {
+    path: ROUTE.CMS,
+    loadChildren: () => loadRemoteModule({
+      type: 'module',
+      remoteEntry: 'http://localhost:8083/remoteEntry.js',
       exposedModule: './module'
     })
     .then(m => m.AppModule)
