@@ -1,6 +1,6 @@
 import { loadRemoteModule } from '@angular-architects/module-federation';
 import { Routes } from '@angular/router';
-import { NotFoundComponent, ROUTE, authActiveGuard } from 'tt-library-angular-porfolio';
+import { NotFoundComponent, ROUTE, authActiveGuard, managementActiveGuard } from 'tt-library-angular-porfolio';
 import { createApp } from 'vue';
 import { environment } from '../environments/environment';
 
@@ -15,7 +15,7 @@ export const routes: Routes = [
     .then(m => m.AppModule)
     .catch(error => {
       console.log(error);
-      location.href = `${environment.assetsUrl}/not-found`;
+      location.href = `${environment.assetsUrl}not-found`;
     }),
   },
   {
@@ -28,7 +28,7 @@ export const routes: Routes = [
     .then(m => m.AppModule)
     .catch(error => {
       console.log(error);
-      location.href = `${environment.assetsUrl}/not-found`;
+      location.href = `${environment.assetsUrl}not-found`;
     }),
     canActivate: [authActiveGuard]
   },
@@ -42,8 +42,9 @@ export const routes: Routes = [
     .then(m => m.AppModule)
     .catch(error => {
       console.log(error);
-      location.href = `${environment.assetsUrl}/not-found`;
+      location.href = `${environment.assetsUrl}not-found`;
     }),
+    canActivate: [managementActiveGuard],
   },
   {
     path: ROUTE.ANIMATION_PORTFOLIO,
@@ -51,7 +52,7 @@ export const routes: Routes = [
     .then(m => m.VueAppModule)
     .catch(error => {
       console.log(error);
-      location.href = `${environment.assetsUrl}/not-found`;
+      location.href = `${environment.assetsUrl}not-found`;
     }),
   },
   {

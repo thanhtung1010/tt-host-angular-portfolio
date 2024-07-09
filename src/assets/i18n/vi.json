@@ -14,7 +14,32 @@
   "MENU": {
     "HOME": "Home",
     "ABOUT_ME": "About Me",
-    "ANIMATION": "Animation"
+    "ANIMATION": "Animation",
+    "CMS": "Content Manager System",
+    "CMS_MAIN": "Main",
+    "CMS_MANAGEMENT_HOME_PAGE": "Manager Home Page",
+    "CMS_MANAGEMENT_ABOUT_ME_PAGE": "Manager About Me Page"
+  },
+  "HEAD": {
+    "LINK_CUSTOMER_SERV": "Order related inquiries<br/>including how to use My Orders",
+    "LINK_IT_SERV": "Technical inquiries -<br/>My Orders system or access issues",
+    "LINK_MORDER_MANUAL": "My Orders manuals",
+    "ZOOM_NORMAL": "Normal",
+    "LOG_OUT": "Sign out",
+    "ZOOM_1X": "1x",
+    "ZOOM_2X": "2x",
+    "ZOOM_3X": "3x",
+    "NOTIFICATION": "Notification",
+    "NOTI_SETTING": "Notification setting",
+    "NOTI_APP": "Receive notification in App",
+    "NOTI_EMAIL": "Receive notification by Email",
+    "FUNCTION": "Function",
+    "EMAIL": "Email",
+    "MOBILE": "Mobile App",
+    "MARK_ALL_AS_READ": "Mark all as read",
+    "ALL": "All",
+    "READ": "Read",
+    "UNREAD": "Unread"
   },
   "COMMON": {
     "LOGO": "Tungne",
@@ -33,6 +58,7 @@
     "ADDRESS": "Tan Binh, Ho Chi Minh City, Viet Nam",
     "LET_BE_INTERNET_FRIEND": "Let's be internet BFFs",
     "AUTHOR": "© 2023, designed & coded by me",
+    "TUNG_DEV": "© Tung dev",
     "HI_FIRST_NAME": "Hi, i’m Tung",
     "ABOUT_ME_DESCRIPTION": "Almost 2 years, I code beautifully simple things, and I love what I do.",
     "LEARN_FOREVER": "“Learn, learn more, learn forever.”",

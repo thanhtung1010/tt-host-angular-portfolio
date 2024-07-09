@@ -2,7 +2,7 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { environment } from '../environments/environment';
-import { AppConfigService, AppLoadingHelper, DeviceIdService, LangService, MenuService } from 'tt-library-angular-porfolio';
+import { AppConfigService, AppLoadingHelper, DeviceIdService, FirebaseService, LangService, MenuService } from 'tt-library-angular-porfolio';
 import { Title } from '@angular/platform-browser';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -27,6 +27,7 @@ export class AppComponent implements OnInit, AfterViewInit {
     private appConfig: AppConfigService,
     private deviceIdSer: DeviceIdService,
     private menuService: MenuService,
+    private firebaseService: FirebaseService,
   ) {}
 
   ngOnInit(): void {
@@ -44,6 +45,7 @@ export class AppComponent implements OnInit, AfterViewInit {
     this.langSer.init();
     // this.deviceIdSer.init();
     this.menuService.init();
+    this.firebaseService.init();
   }
 
   ngAfterViewInit(): void {
