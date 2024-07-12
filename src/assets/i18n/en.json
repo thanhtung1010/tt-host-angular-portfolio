@@ -18,7 +18,11 @@
     "CMS": "Content Manager System",
     "CMS_MAIN": "Main",
     "CMS_MANAGEMENT_HOME_PAGE": "Manager Home Page",
-    "CMS_MANAGEMENT_ABOUT_ME_PAGE": "Manager About Me Page"
+    "CMS_MANAGEMENT_ABOUT_ME_PAGE": "Manager About Me Page",
+    "CMS_ADMIN": {
+      "INDEX": "Admin",
+      "USERS": "Users"
+    }
   },
   "HEAD": {
     "LINK_CUSTOMER_SERV": "Order related inquiries<br/>including how to use My Orders",
@@ -118,13 +122,36 @@
     "DOWNLOAD_MY_CV": "Download my CV",
     "MORE_ABOUT_ME": "More about me",
     "SAY_HI": "Say hi to me",
-    "BACK_TO_HOME": "Back to home"
+    "BACK_TO_HOME": "Back to home",
+    "SEARCH": "Search",
+    "ADD": "Add"
   },
   "FORM": {
     "EMAIL": "Email",
     "EMAIL_HOLDER": "Enter your email",
     "PASSWORD": "Password",
     "PASSWORD_HOLDER": "Enter your password"
+  },
+  "ADMIN": {
+    "USER_MNGT": {
+      "TITLE": "User Management"
+    }
+  },
+  "PLACEHOLDER": {
+    "USER_INPUT": "User Name",
+    "ROLE_SELECT": "Select Role"
+  },
+  "LABEL": {
+    "USER_INPUT": "User Name",
+    "ROLE_SELECT": "Role"
+  },
+  "TABLE": {
+    "SELECT": "",
+    "FULL_NAME": "Full Name",
+    "EMAIL": "Email",
+    "PHONE_NUMBER": "Phone Number",
+    "ROLE": "Role",
+    "ACTION": "Action"
   },
   "EMPTY": ""
 }

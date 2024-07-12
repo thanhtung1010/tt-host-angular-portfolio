@@ -776,6 +776,12 @@
                     fill: $mainColor;
                     stroke: $mainColor;
                   }
+
+                  img {
+                    filter: none;
+                    fill: $mainColor;
+                    stroke: $mainColor;
+                  }
                 }
               }
 
@@ -884,7 +890,7 @@
     .text {
       font-size: 1.2rem !important;
     }
-    font-weight: 500;
+    font-weight: 600;
     display: flex;
     align-items: center;
   }
