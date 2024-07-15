@@ -116,7 +116,8 @@
     "EMPTY": "Oops! The content for this page is being updated.",
     "NO_DATA": "No data.",
     "SKYPE_ID_COPY_SUCCESS": "Skype ID copy to clipboard",
-    "SOMTHING_WAS_WRONG": "Something was wrong"
+    "SOMTHING_WAS_WRONG": "Something was wrong",
+    "WINFIT_REQUIRED": "Nhập thiếu rồi nè bạn ơi"
   },
   "BUTTON": {
     "DOWNLOAD_MY_CV": "Download my CV",
@@ -124,7 +125,9 @@
     "SAY_HI": "Say hi to me",
     "BACK_TO_HOME": "Back to home",
     "SEARCH": "Search",
-    "ADD": "Add"
+    "ADD": "Add",
+    "SAVE_WINFIT": "Lưu",
+    "CHECK_WINFIT_INDEX": "Kiểm tra chỉ số"
   },
   "FORM": {
     "EMAIL": "Email",
@@ -139,11 +142,20 @@
   },
   "PLACEHOLDER": {
     "USER_INPUT": "User Name",
-    "ROLE_SELECT": "Select Role"
+    "ROLE_SELECT": "Select Role",
+    "AGE_INPUT": "Your Age",
+    "HEIGHT_INPUT": "Your Height",
+    "WEIGHT_INPUT": "Your Weight"
   },
   "LABEL": {
     "USER_INPUT": "User Name",
-    "ROLE_SELECT": "Role"
+    "ROLE_SELECT": "Role",
+    "AGE_INPUT_WINFIT": "Nhập tuổi của bạn",
+    "HEIGHT_INPUT_WINFIT": "Nhập chiều cao của bạn",
+    "WEIGHT_INPUT_WINFIT": "Nhập cân nặng của bạn",
+    "AGE_INPUT": "Enter Your Age",
+    "HEIGHT_INPUT": "Enter Your Height",
+    "WEIGHT_INPUT": "Enter Your Weight"
   },
   "TABLE": {
     "SELECT": "",

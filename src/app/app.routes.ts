@@ -1,7 +1,6 @@
 import { loadRemoteModule } from '@angular-architects/module-federation';
 import { Routes } from '@angular/router';
 import { NotFoundComponent, ROUTE, authActiveGuard, managementActiveGuard } from 'tt-library-angular-porfolio';
-import { createApp } from 'vue';
 import { environment } from '../environments/environment';
 
 export const routes: Routes = [
@@ -45,6 +44,20 @@ export const routes: Routes = [
       location.href = `${environment.assetsUrl}not-found`;
     }),
     canActivate: [managementActiveGuard],
+  },
+  {
+    path: ROUTE.WINFIT_ONLINE,
+    loadComponent: () => loadRemoteModule({
+      type: 'script',
+      remoteEntry: 'http://localhost:8085/remoteEntry.js',
+      exposedModule: './winfit-online',
+      remoteName: '@tt-winfit-online'
+    })
+    .then(c => c.WinfitOnlineComponent)
+    .catch(error => {
+      console.log(error);
+      location.href = `${environment.assetsUrl}not-found`;
+    }),
   },
   {
     path: ROUTE.ANIMATION_PORTFOLIO,
