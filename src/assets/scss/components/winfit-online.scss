@@ -1,4 +1,4 @@
-&-winfit-online {
+&-wo {
   background-image: url('../../svg/winfit-background.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -69,6 +69,15 @@
   &-middle {
     position: relative;
     z-index: 2;
+    width: 100%;
+
+    input {
+      margin-bottom: 20px;
+    }
+
+    nz-radio-group {
+      margin-bottom: 20px;
+    }
   }
 
   &-bottom {
@@ -78,5 +87,15 @@
     align-items: center;
     position: relative;
     z-index: 2;
+  }
+
+  &-modal {
+    width: fit-content !important;
+    padding: 20px !important;
+
+    .ant-modal-content {
+      width: 100vw;
+      max-width: 1000px;
+    }
   }
 }

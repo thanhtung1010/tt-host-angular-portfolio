@@ -47,13 +47,12 @@ export const routes: Routes = [
   },
   {
     path: ROUTE.WINFIT_ONLINE,
-    loadComponent: () => loadRemoteModule({
-      type: 'script',
+    loadChildren: () => loadRemoteModule({
+      type: 'module',
       remoteEntry: 'http://localhost:8085/remoteEntry.js',
-      exposedModule: './winfit-online',
-      remoteName: '@tt-winfit-online'
+      exposedModule: './module'
     })
-    .then(c => c.WinfitOnlineComponent)
+    .then(m => m.AppModule)
     .catch(error => {
       console.log(error);
       location.href = `${environment.assetsUrl}not-found`;
