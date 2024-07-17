@@ -117,7 +117,8 @@
     "NO_DATA": "No data.",
     "SKYPE_ID_COPY_SUCCESS": "Skype ID copy to clipboard",
     "SOMTHING_WAS_WRONG": "Something was wrong",
-    "WINFIT_REQUIRED": "Nhập thiếu rồi nè bạn ơi"
+    "WINFIT_REQUIRED": "Nhập thiếu rồi bạn ơi",
+    "LOGIN_BEFORE_SAVE": "Bạn cần đăng nhập trước khi lưu"
   },
   "BUTTON": {
     "DOWNLOAD_MY_CV": "Download my CV",
@@ -127,7 +128,9 @@
     "SEARCH": "Search",
     "ADD": "Add",
     "SAVE_WINFIT": "Lưu",
-    "CHECK_WINFIT_INDEX": "Kiểm tra chỉ số"
+    "CHECK_WINFIT_INDEX": "Kiểm tra chỉ số",
+    "LOGIN_WINFIT": "Đăng nhập",
+    "CANCEL_WINFIT": "Thoát"
   },
   "FORM": {
     "EMAIL": "Email",
@@ -144,6 +147,12 @@
     "USER_INPUT": "User Name",
     "ROLE_SELECT": "Select Role",
     "AGE_INPUT": "Your Age",
+    "AGE_INPUT_WINFIT": "18",
+    "HEIGHT_INPUT_WINFIT": "(cm)",
+    "WEIGHT_INPUT_WINFIT": "(kg)",
+    "CUSTOMER_NAME_INPUT_WINFIT": "Nguyễn Văn A",
+    "CUSTOMER_EMAIL_INPUT_WINFIT": "abc@gmail.com",
+    "CUSTOMER_PHONE_NUMBER_INPUT_WINFIT": "0836****70",
     "HEIGHT_INPUT": "Your Height",
     "WEIGHT_INPUT": "Your Weight"
   },
@@ -153,6 +162,9 @@
     "AGE_INPUT_WINFIT": "Nhập tuổi của bạn",
     "HEIGHT_INPUT_WINFIT": "Nhập chiều cao của bạn (cm)",
     "WEIGHT_INPUT_WINFIT": "Nhập cân nặng của bạn (kg)",
+    "CUSTOMER_NAME_INPUT_WINFIT": "Nhập Tên",
+    "CUSTOMER_EMAIL_INPUT_WINFIT": "Nhập Email",
+    "CUSTOMER_PHONE_NUMBER_INPUT_WINFIT": "Nhập Số Điện Thoại",
     "AGE_INPUT": "Enter Your Age",
     "HEIGHT_INPUT": "Enter Your Height",
     "WEIGHT_INPUT": "Enter Your Weight"
@@ -166,7 +178,9 @@
     "ACTION": "Action",
     "ABOUT_AGE": "Độ tuổi",
     "EXPLAIN_INDEX_BMR": "Diễn giải tỷ lệ BMR",
-    "INDEX_BMI": "Tỷ lệ BMI",
+    "EXPLAIN_BMI": "Tỷ lệ BMI",
+    "INDEX_BMI": "Chỉ số BMI",
+    "INDEX_BMR": "BMR: Tỷ lệ BMR / Cân nặng / Ngày",
     "INDEX_BODY_FAT": "Tỷ lệ mỡ cơ thể",
     "INDEX_VISCERAL_FAT": "Tỷ lệ mỡ nội tạng",
     "INDEX_SKELETAL_MUSCLES": "Tỷ lệ cơ xương",
@@ -176,6 +190,7 @@
     "VISCERAL_FAT_LEVEL": "Mức mỡ nội tạng",
     "FITNESS": "Thể hình",
     "GOOD": "Tốt",
+    "VERY_GOOD": "Rất tốt",
     "HIGH": "Cao",
     "VERY_HIGH": "Rất cao",
     "DANGER": "Nguy hiểm",
@@ -184,11 +199,15 @@
     "LOW": "Thấp",
     "NORMAL": "Bình thường",
     "BMI": "BMI",
+    "BMR": "BMR",
     "UNDERWEIGHT": "Thiếu cân",
     "BALANCE": "Cân đối",
     "OVERWEIGHT": "Thừa cân",
     "OBESITY": "Béo phì",
-    "DANGEROUS_OBESITY": "Béo phì nguy hiểm"
+    "DANGEROUS_OBESITY": "Béo phì nguy hiểm",
+    "HEIGHT_WINFIT": "Chiều cao (cm)",
+    "WEIGHT_WINFIT": "Cân nặng (kg)",
+    "BASIC_INFO_WINFIT": "Thông tin cơ bản"
   },
   "GENDER": {
     "INDEX": "Gender",

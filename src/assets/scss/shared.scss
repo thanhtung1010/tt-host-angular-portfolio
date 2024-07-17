@@ -82,6 +82,18 @@
   display: block;
 }
 
+&-red {
+  color: #ff4d4f;
+}
+
+&-border-red {
+  border-color: #ff4d4f;
+}
+
+&-koho {
+  font-family: 'Koho' !important;
+}
+
 $size: 0,
   5,
   10,

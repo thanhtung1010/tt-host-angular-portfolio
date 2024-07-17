@@ -1,6 +1,12 @@
 import { loadRemoteModule } from '@angular-architects/module-federation';
 import { Routes } from '@angular/router';
-import { NotFoundComponent, ROUTE, authActiveGuard, managementActiveGuard } from 'tt-library-angular-porfolio';
+import {
+  NotFoundComponent,
+  ROUTE,
+  authActiveGuard,
+  managementActiveGuard,
+  winfitOnlineActiveGuard,
+} from 'tt-library-angular-porfolio';
 import { environment } from '../environments/environment';
 
 export const routes: Routes = [
@@ -57,6 +63,7 @@ export const routes: Routes = [
       console.log(error);
       location.href = `${environment.assetsUrl}not-found`;
     }),
+    canActivate: [winfitOnlineActiveGuard]
   },
   {
     path: ROUTE.ANIMATION_PORTFOLIO,

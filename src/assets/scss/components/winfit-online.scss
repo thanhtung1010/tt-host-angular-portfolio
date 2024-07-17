@@ -97,5 +97,112 @@
       width: 100vw;
       max-width: 1000px;
     }
+
+    .ant-modal-header, .ant-modal-footer {
+      display: none;
+    }
+
+    &-section {
+      margin-bottom: 20px;
+
+      &-head {
+        font-family: 'Koho' !important;
+        font-weight: 700 !important;
+        margin-bottom: 10px;
+      }
+
+      &-bmr {
+
+        .ant-table-thead {
+
+          .ant-table-cell {
+            background-color: #FFB548;
+          }
+        }
+      }
+
+      &-bmi {
+
+        .ant-table-thead {
+
+          .ant-table-cell {
+            background-color: #FFB548;
+          }
+        }
+      }
+
+      &-bodyfat {
+
+        .ant-table-thead {
+
+          .ant-table-cell {
+            background-color: #FF682B;
+          }
+        }
+      }
+
+      &-visceralfat {
+
+        .ant-table-thead {
+
+          .ant-table-cell {
+            background-color: #00D181;
+          }
+        }
+      }
+
+      &-skeletalmescles {
+
+        .ant-table-thead {
+
+          .ant-table-cell {
+            background-color: #009FFF;
+          }
+        }
+      }
+
+      &-footer {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+      }
+
+      .ant-table-thead {
+
+        .ant-table-cell {
+          font-family: 'Koho';
+          font-weight: 600;
+        }
+      }
+
+      .ant-table-tbody {
+
+        .ant-table-row:hover {
+
+          .ant-table-cell {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+
+  &-basic-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+
+    &-item {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      label {
+        font-family: 'Koho';
+        font-weight: 600;
+      }
+    }
   }
 }
