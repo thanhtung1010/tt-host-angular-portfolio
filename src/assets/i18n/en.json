@@ -19,6 +19,7 @@
     "CMS_MAIN": "Main",
     "CMS_MANAGEMENT_HOME_PAGE": "Manager Home Page",
     "CMS_MANAGEMENT_ABOUT_ME_PAGE": "Manager About Me Page",
+    "CMS_WINFIT_ONLINE": "Winfit Online",
     "CMS_ADMIN": {
       "INDEX": "Admin",
       "USERS": "Users"
@@ -164,7 +165,7 @@
     "WEIGHT_INPUT_WINFIT": "Nhập cân nặng của bạn (kg)",
     "CUSTOMER_NAME_INPUT_WINFIT": "Nhập Tên",
     "CUSTOMER_EMAIL_INPUT_WINFIT": "Nhập Email",
-    "CUSTOMER_PHONE_NUMBER_INPUT_WINFIT": "Nhập Số Điện Thoại",
+    "CUSTOMER_PHONE_NUMBER_INPUT_WINFIT": "Nhập Số Điện Thoại (+84)",
     "AGE_INPUT": "Enter Your Age",
     "HEIGHT_INPUT": "Enter Your Height",
     "WEIGHT_INPUT": "Enter Your Weight"
@@ -207,7 +208,12 @@
     "DANGEROUS_OBESITY": "Béo phì nguy hiểm",
     "HEIGHT_WINFIT": "Chiều cao (cm)",
     "WEIGHT_WINFIT": "Cân nặng (kg)",
-    "BASIC_INFO_WINFIT": "Thông tin cơ bản"
+    "BASIC_INFO_WINFIT": "Thông tin cơ bản",
+    "WATER_NEEDED_WINFIT": "Lượng nước cần thiết",
+    "WATER_WINFIT": "Lít nước",
+    "CUSTOMER_EMAIL_WINFIT": "Email",
+    "CUSTOMER_NAME_WINFIT": "Tên Khách Hàng",
+    "CUSTOMER_PHONE_NUMBER_WINFIT": "Số Điện Thoại"
   },
   "GENDER": {
     "INDEX": "Gender",
