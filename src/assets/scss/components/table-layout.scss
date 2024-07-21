@@ -22,7 +22,7 @@
       border-bottom: 1px solid $boxBorderColor1 !important;
     }
 
-    &.pen-thead-batch {
+    &.tt-thead-batch {
       color: $mainColor;
       font-weight: 500;
       font-size: 1.025em;
@@ -37,7 +37,7 @@
 
         .ant-table-row {
 
-          &.pen-row-batch {
+          &.tt-row-batch {
             height: 35px;
           }
         }
@@ -87,6 +87,10 @@
                   animation: none;
                   transform: rotate(180deg);
                 }
+                img {
+                  animation: none;
+                  transform: rotate(180deg);
+                }
               }
             }
             .vertical {
@@ -97,6 +101,17 @@
               margin: 0 6px;
             }
             svg.icon {
+              width: 22px;
+              height: 22px;
+              transition: transform 0.23s linear;
+              &.white {
+                fill: $whiteColor;
+                use {
+                  fill: $whiteColor;
+                }
+              }
+            }
+            img {
               width: 22px;
               height: 22px;
               transition: transform 0.23s linear;
@@ -148,12 +163,19 @@
         width: 20px;
         height: 20px;
       }
+      img {
+        width: 20px;
+        height: 20px;
+      }
       &:hover,
       &:focus,
       &:active,
       &.active {
         background-color: $mainColor;
         svg.icon {
+          filter: brightness(0) invert(1);
+        }
+        img {
           filter: brightness(0) invert(1);
         }
       }

@@ -119,7 +119,8 @@
     "SKYPE_ID_COPY_SUCCESS": "Skype ID copy to clipboard",
     "SOMTHING_WAS_WRONG": "Something was wrong",
     "WINFIT_REQUIRED": "Nhập thiếu rồi bạn ơi",
-    "LOGIN_BEFORE_SAVE": "Bạn cần đăng nhập trước khi lưu"
+    "LOGIN_BEFORE_SAVE": "Bạn cần đăng nhập trước khi lưu",
+    "CONFIRM_ACTION": "Are you sure to do this action?"
   },
   "BUTTON": {
     "DOWNLOAD_MY_CV": "Download my CV",
@@ -131,7 +132,12 @@
     "SAVE_WINFIT": "Lưu",
     "CHECK_WINFIT_INDEX": "Kiểm tra chỉ số",
     "LOGIN_WINFIT": "Đăng nhập",
-    "CANCEL_WINFIT": "Thoát"
+    "CANCEL_WINFIT": "Thoát",
+    "ADVANCED_SEARCH": "Search",
+    "REFRESH": "Refresh",
+    "RESET": "Reset",
+    "CANCEL": "cancel",
+    "OK": "Ok"
   },
   "FORM": {
     "EMAIL": "Email",
@@ -151,8 +157,11 @@
     "AGE_INPUT_WINFIT": "18",
     "HEIGHT_INPUT_WINFIT": "(cm)",
     "WEIGHT_INPUT_WINFIT": "(kg)",
+    "NAME_INPUT_WINFIT": "Nguyễn Văn A",
     "CUSTOMER_NAME_INPUT_WINFIT": "Nguyễn Văn A",
+    "EMAIL_INPUT_WINFIT": "abc@gmail.com",
     "CUSTOMER_EMAIL_INPUT_WINFIT": "abc@gmail.com",
+    "PHONE_NUMBER_INPUT_WINFIT": "0836****70",
     "CUSTOMER_PHONE_NUMBER_INPUT_WINFIT": "0836****70",
     "HEIGHT_INPUT": "Your Height",
     "WEIGHT_INPUT": "Your Weight"
@@ -163,9 +172,12 @@
     "AGE_INPUT_WINFIT": "Nhập tuổi của bạn",
     "HEIGHT_INPUT_WINFIT": "Nhập chiều cao của bạn (cm)",
     "WEIGHT_INPUT_WINFIT": "Nhập cân nặng của bạn (kg)",
-    "CUSTOMER_NAME_INPUT_WINFIT": "Nhập Tên",
-    "CUSTOMER_EMAIL_INPUT_WINFIT": "Nhập Email",
-    "CUSTOMER_PHONE_NUMBER_INPUT_WINFIT": "Nhập Số Điện Thoại (+84)",
+    "NAME_INPUT_WINFIT": "Nhập Tên",
+    "CUSTOMER_NAME_INPUT_WINFIT": "Nhập Tên Khách Hàng",
+    "EMAIL_INPUT_WINFIT": "Nhập Email",
+    "CUSTOMER_EMAIL_INPUT_WINFIT": "Nhập Email Khách Hàng",
+    "PHONE_NUMBER_INPUT_WINFIT": "Nhập Số Điện Thoại (+84)",
+    "CUSTOMER_PHONE_NUMBER_INPUT_WINFIT": "Nhập Số Điện Thoại Khách Hàng (+84)",
     "AGE_INPUT": "Enter Your Age",
     "HEIGHT_INPUT": "Enter Your Height",
     "WEIGHT_INPUT": "Enter Your Weight"
@@ -209,7 +221,7 @@
     "HEIGHT_WINFIT": "Chiều cao (cm)",
     "WEIGHT_WINFIT": "Cân nặng (kg)",
     "BASIC_INFO_WINFIT": "Thông tin cơ bản",
-    "WATER_NEEDED_WINFIT": "Lượng nước cần thiết",
+    "WATER_NEEDED_WINFIT": "Lượng nước cần thiết / ngày",
     "WATER_WINFIT": "Lít nước",
     "CUSTOMER_EMAIL_WINFIT": "Email",
     "CUSTOMER_NAME_WINFIT": "Tên Khách Hàng",

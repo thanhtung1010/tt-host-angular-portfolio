@@ -20,7 +20,7 @@
   &-wrapper {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
     height: $headerHeight;
     .left {
       width: 60%;
@@ -48,6 +48,11 @@
             color: black;
           }
           .icon {
+            width: $headerLeftIconHeight;
+            height: $headerLeftIconHeight;
+            margin: $headerLeftIconHeighMargin;
+          }
+          img {
             width: $headerLeftIconHeight;
             height: $headerLeftIconHeight;
             margin: $headerLeftIconHeighMargin;
@@ -99,6 +104,11 @@
             font-size: 0.95rem;
           }
           .icon {
+            width: $headerRightIconHeight;
+            height: $headerRightIconHeight;
+            margin: $headerLeftIconHeighMargin;
+          }
+          img {
             width: $headerRightIconHeight;
             height: $headerRightIconHeight;
             margin: $headerLeftIconHeighMargin;
@@ -163,6 +173,12 @@
         height: $toggleIconWidth;
         width: $toggleIconWidth;
         fill: $whiteColor;
+      }
+      img {
+        height: $toggleIconWidth;
+        width: $toggleIconWidth;
+        fill: $whiteColor;
+        filter: brightness(0) invert(1);
       }
       .toggle-button {
         transition: transform 0.23s linear;
@@ -275,6 +291,10 @@
             width: 20px;
             height: 20px;
           }
+          img {
+            width: 20px;
+            height: 20px;
+          }
         }
       }
 
@@ -286,6 +306,10 @@
         .right {
           font-size: 0.9em !important;
           .icon {
+            width: 20px;
+            height: 20px;
+          }
+          img{
             width: 20px;
             height: 20px;
           }
@@ -462,6 +486,10 @@
             width: 20px;
             height: 20px;
           }
+          img {
+            width: 20px;
+            height: 20px;
+          }
         }
       }
 
@@ -473,6 +501,10 @@
         .right {
           font-size: 0.9em !important;
           .icon {
+            width: 20px;
+            height: 20px;
+          }
+          img {
             width: 20px;
             height: 20px;
           }
@@ -624,6 +656,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    ul {
+      width: #{$sideBarWidth} !important;
+    }
+
+    div {
+      width: #{$sideBarWidth} !important;
+    }
   }
 
   .ant-layout-sider-children {
@@ -631,8 +671,9 @@
   }
 
   &-menu {
+    height: 100%;
     min-height: calc(100vh - #{$headerHeight * 2});
-    max-height: calc(100vh - #{$headerHeight * 2});
+    max-height: calc(100vh - #{$headerHeight});
     overflow: hidden auto;
 
     .item {
@@ -668,6 +709,21 @@
         }
 
         .icon {
+          transition: all 0.23s ease;
+
+          svg {
+            display: inline-flex;
+            width: $menuItemIconWidth;
+            height: $menuItemIconWidth;
+            fill: $mainColor;
+            padding-right: $menuItemWrapperPadding;
+          }
+
+          &.open {
+            transform: rotate(90deg) translate(4px, 2px);
+          }
+        }
+        img {
           transition: all 0.23s ease;
 
           svg {
@@ -760,6 +816,9 @@
                 .icon {
                   stroke: black;
                 }
+                img {
+                  stroke: black;
+                }
 
                 &:hover,
                 &:focus,
@@ -844,6 +903,12 @@
       height: $toggleIconWidth;
       width: $toggleIconWidth;
     }
+    img {
+      filter: brightness(0) invert(1);
+      fill: $whiteColor;
+      height: $toggleIconWidth;
+      width: $toggleIconWidth;
+    }
   }
 
   &-version {
@@ -881,6 +946,11 @@
   }
   &-title {
     .icon {
+      width: $pageTitleIconWidth;
+      height: $pageTitleIconWidth;
+      padding-right: 12px;
+    }
+    img {
       width: $pageTitleIconWidth;
       height: $pageTitleIconWidth;
       padding-right: 12px;
@@ -958,6 +1028,10 @@
     width: 14px;
     height: 14px;
   }
+  img {
+    width: 14px;
+    height: 14px;
+  }
 
   &:hover,
   &:active,
@@ -971,6 +1045,10 @@
       padding: 0 4px;
     }
     .icon {
+      fill: $whiteColor;
+    }
+    img {
+      filter: brightness(0) invert(1);
       fill: $whiteColor;
     }
   }
@@ -1007,6 +1085,12 @@
 }
 
 @media only screen and (max-width: #{$breakPointMb}) {
+  &-wrapper {
+
+    .ant-layout-sider {
+      position: fixed;
+    }
+  }
   &-manager-header {
     height: $headerHeightMb;
     background-color: $mainColor;
@@ -1019,8 +1103,9 @@
       right: -100%;
       transition: all 0.23s linear;
       flex-direction: column;
+      justify-content: flex-start;
       // background-color: $whiteColor;
-      background-color: colorMainRgba(0.63);
+      background-color: #1a457ba1;
       padding: 4.3rem 2rem;
 
       &-toggle {
@@ -1081,6 +1166,11 @@
             }
 
             .icon {
+              width: 30px;
+              height: 30px;
+              margin-right: 20px;
+            }
+            img {
               width: 30px;
               height: 30px;
               margin-right: 20px;
@@ -1165,7 +1255,7 @@
       min-width: 0px !important;
       width: 0px !important;
 
-      .pen-sidebar-wrapper {
+      .tt-sidebar-wrapper {
         width: 0 !important;
         overflow: hidden;
         pointer-events: none;

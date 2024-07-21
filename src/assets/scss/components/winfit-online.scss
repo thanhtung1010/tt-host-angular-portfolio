@@ -185,6 +185,14 @@
         }
       }
     }
+
+    &-edit-left {
+      padding: 0 10px;
+    }
+
+    &-edit-right {
+      padding: 0 10px;
+    }
   }
 
   &-basic-info {
@@ -202,6 +210,46 @@
       label {
         font-family: 'Koho';
         font-weight: 600;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: #{$breakPointMb}) {
+  &-wo {
+
+    &-content {
+      margin: 10px;
+    }
+
+    &-modal {
+
+      .ant-modal-content {
+        max-width: 800px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  &-wo {
+
+    &-modal {
+
+      .ant-modal-content {
+        max-width: 600px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  &-wo {
+
+    &-modal {
+
+      .ant-modal-content {
+        width: 100%;
       }
     }
   }
