@@ -65,15 +65,15 @@ export const routes: Routes = [
     }),
     canActivate: [winfitOnlineActiveGuard]
   },
-  {
-    path: ROUTE.ANIMATION_PORTFOLIO,
-    loadChildren: () => import('./_modules/vue-app/vue-app.module')
-    .then(m => m.VueAppModule)
-    .catch(error => {
-      console.log(error);
-      location.href = `${environment.assetsUrl}not-found`;
-    }),
-  },
+  // {
+  //   path: ROUTE.ANIMATION_PORTFOLIO,
+  //   loadChildren: () => import('./_modules/vue-app/vue-app.module')
+  //   .then(m => m.VueAppModule)
+  //   .catch(error => {
+  //     console.log(error);
+  //     location.href = `${environment.assetsUrl}not-found`;
+  //   }),
+  // },
   {
     path: ROUTE.NOT_FOUND,
     component: NotFoundComponent,
