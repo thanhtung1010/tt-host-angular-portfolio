@@ -1,7 +1,12 @@
 import { loadRemoteModule } from '@angular-architects/module-federation';
 import { Routes } from '@angular/router';
-import { NotFoundComponent, ROUTE } from 'tt-library-angular-porfolio';
-import { createApp } from 'vue';
+import {
+  NotFoundComponent,
+  ROUTE,
+  authActiveGuard,
+  managementActiveGuard,
+  winfitOnlineActiveGuard,
+} from 'tt-library-angular-porfolio';
 import { environment } from '../environments/environment';
 
 export const routes: Routes = [
@@ -15,11 +20,11 @@ export const routes: Routes = [
     .then(m => m.AppModule)
     .catch(error => {
       console.log(error);
-      location.href = `${environment.assetsUrl}/not-found`;
+      location.href = `${environment.assetsUrl}not-found`;
     }),
   },
   {
-    path: ROUTE.MANAGEMENT,
+    path: ROUTE.AUTH,
     loadChildren: () => loadRemoteModule({
       type: 'module',
       remoteEntry: `${environment.remoteModuleUrl.angularAuth}remoteEntry.js`,
@@ -28,8 +33,37 @@ export const routes: Routes = [
     .then(m => m.AppModule)
     .catch(error => {
       console.log(error);
-      location.href = `${environment.assetsUrl}/not-found`;
+      location.href = `${environment.assetsUrl}not-found`;
     }),
+    canActivate: [authActiveGuard]
+  },
+  {
+    path: ROUTE.CMS,
+    loadChildren: () => loadRemoteModule({
+      type: 'module',
+      remoteEntry: 'http://localhost:8083/remoteEntry.js',
+      exposedModule: './module'
+    })
+    .then(m => m.AppModule)
+    .catch(error => {
+      console.log(error);
+      location.href = `${environment.assetsUrl}not-found`;
+    }),
+    canActivate: [managementActiveGuard],
+  },
+  {
+    path: ROUTE.WINFIT_ONLINE,
+    loadChildren: () => loadRemoteModule({
+      type: 'module',
+      remoteEntry: 'http://localhost:8085/remoteEntry.js',
+      exposedModule: './module'
+    })
+    .then(m => m.AppModule)
+    .catch(error => {
+      console.log(error);
+      location.href = `${environment.assetsUrl}not-found`;
+    }),
+    canActivate: [winfitOnlineActiveGuard]
   },
   {
     path: ROUTE.ANIMATION_PORTFOLIO,
@@ -37,7 +71,7 @@ export const routes: Routes = [
     .then(m => m.VueAppModule)
     .catch(error => {
       console.log(error);
-      location.href = `${environment.assetsUrl}/not-found`;
+      location.href = `${environment.assetsUrl}not-found`;
     }),
   },
   {

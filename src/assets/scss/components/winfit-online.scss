@@ -1,0 +1,256 @@
+&-wo {
+  background-image: url('../../svg/winfit-background.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: initial;
+
+  &-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $blackColor;
+    opacity: .5;
+    z-index: 1;
+  }
+
+  &-content {
+    backdrop-filter: blur(15px);
+    height: 100%;
+    max-height: 600px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    z-index: 2;
+    overflow: hidden;
+
+    &-wrap {
+      z-index: initial;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      overflow: hidden auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    &-backdrop {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $whiteColor;
+      opacity: .5;
+      z-index: 1;
+    }
+  }
+
+  &-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+  }
+
+  &-middle {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+
+    input {
+      margin-bottom: 20px;
+    }
+
+    nz-radio-group {
+      margin-bottom: 20px;
+    }
+  }
+
+  &-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  &-modal {
+    width: fit-content !important;
+    padding: 20px !important;
+
+    .ant-modal-content {
+      width: 100vw;
+      max-width: 1000px;
+    }
+
+    .ant-modal-header, .ant-modal-footer {
+      display: none;
+    }
+
+    &-section {
+      margin-bottom: 20px;
+
+      &-head {
+        font-family: 'Koho' !important;
+        font-weight: 700 !important;
+        margin-bottom: 10px;
+      }
+
+      &-bmr {
+
+        .ant-table-thead {
+
+          .ant-table-cell {
+            background-color: #FFB548;
+          }
+        }
+      }
+
+      &-bmi {
+
+        .ant-table-thead {
+
+          .ant-table-cell {
+            background-color: #FFB548;
+          }
+        }
+      }
+
+      &-bodyfat {
+
+        .ant-table-thead {
+
+          .ant-table-cell {
+            background-color: #FF682B;
+          }
+        }
+      }
+
+      &-visceralfat {
+
+        .ant-table-thead {
+
+          .ant-table-cell {
+            background-color: #00D181;
+          }
+        }
+      }
+
+      &-skeletalmescles {
+
+        .ant-table-thead {
+
+          .ant-table-cell {
+            background-color: #009FFF;
+          }
+        }
+      }
+
+      &-footer {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+      }
+
+      .ant-table-thead {
+
+        .ant-table-cell {
+          font-family: 'Koho';
+          font-weight: 600;
+        }
+      }
+
+      .ant-table-tbody {
+
+        .ant-table-row:hover {
+
+          .ant-table-cell {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+
+    &-edit-left {
+      padding: 0 10px;
+    }
+
+    &-edit-right {
+      padding: 0 10px;
+    }
+  }
+
+  &-basic-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+
+    &-item {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      label {
+        font-family: 'Koho';
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: #{$breakPointMb}) {
+  &-wo {
+
+    &-content {
+      margin: 10px;
+    }
+
+    &-modal {
+
+      .ant-modal-content {
+        max-width: 800px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  &-wo {
+
+    &-modal {
+
+      .ant-modal-content {
+        max-width: 600px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  &-wo {
+
+    &-modal {
+
+      .ant-modal-content {
+        width: 100%;
+      }
+    }
+  }
+}

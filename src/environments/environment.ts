@@ -22,13 +22,13 @@ export const environment: IAppConfig = {
     },
   },
   firebaseConfig: {
-    apiKey: "AIzaSyADMzU8kiEIosqyvJiopulcmF2ff3ppCus",
-    authDomain: "my-project-8c416.firebaseapp.com",
-    projectId: "my-project-8c416",
-    storageBucket: "my-project-8c416.appspot.com",
-    messagingSenderId: "468318730006",
-    appId: "1:468318730006:web:7e390a37a0e941aab60237",
-    measurementId: "G-CFZ3NPLSEF"
+    apiKey: "AIzaSyAiujLVKqBWolrMcJX7ULsBnEaOx7DG40s",
+    authDomain: "tt-portfolio-dev.firebaseapp.com",
+    projectId: "tt-portfolio-dev",
+    storageBucket: "tt-portfolio-dev.appspot.com",
+    messagingSenderId: "352786881862",
+    appId: "1:352786881862:web:3d1297c81be84d19c89947",
+    measurementId: "G-J6LX06V4KT"
   },
   googleConfig: {
     downloadCV: "https://drive.google.com/uc?export=download&id=13GFK_OWfcxseMy5gjG2TyLLbIPcc8LML",
