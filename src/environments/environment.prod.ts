@@ -35,8 +35,8 @@ export const environment: any = {
     reactManagement: '_REMOTE_MODULE_URL_REACT_MANAGEMENT_',
     angularPortfolio: "_REMOTE_MODULE_URL_ANGULAR_PORTFOLIO_",
     angularAuth: "_REMOTE_MODULE_URL_ANGULAR_AUTH_",
-    angularManagement: '',
-    angularWinfitOnline: '',
+    angularManagement: '_REMOTE_MODULE_URL_ANGULAR_MANAGEMENT_',
+    angularWinfitOnline: '_REMOTE_MODULE_URL_ANGULAR_WINFIT_ONLINE_',
     vueAnimation: "_REMOTE_MODULE_URL_VUE_ANIMATION_"
   },
 }
