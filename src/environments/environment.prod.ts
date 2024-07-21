@@ -37,6 +37,8 @@ export const environment: IAppConfig = {
     reactManagement: "",
     angularPortfolio: "",
     angularAuth: "",
+    angularManagement: '',
+    angularWinfitOnline: '',
     vueAnimation: ""
   },
 }
