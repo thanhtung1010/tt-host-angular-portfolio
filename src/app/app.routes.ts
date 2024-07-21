@@ -41,7 +41,7 @@ export const routes: Routes = [
     path: ROUTE.CMS,
     loadChildren: () => loadRemoteModule({
       type: 'module',
-      remoteEntry: 'http://localhost:8083/remoteEntry.js',
+      remoteEntry: `${environment.remoteModuleUrl.angularManagement}remoteEntry.js`,
       exposedModule: './module'
     })
     .then(m => m.AppModule)
@@ -55,7 +55,7 @@ export const routes: Routes = [
     path: ROUTE.WINFIT_ONLINE,
     loadChildren: () => loadRemoteModule({
       type: 'module',
-      remoteEntry: 'http://localhost:8085/remoteEntry.js',
+      remoteEntry: `${environment.remoteModuleUrl.angularWinfitOnline}remoteEntry.js`,
       exposedModule: './module'
     })
     .then(m => m.AppModule)
