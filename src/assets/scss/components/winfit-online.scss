@@ -193,6 +193,27 @@
     &-edit-right {
       padding: 0 10px;
     }
+
+    &-notice {
+
+      &-title {
+        color: $blueColor;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+      .ant-collapse-header {
+        display: none !important;
+      }
+
+      .ant-collapse {
+        border: unset;
+      }
+
+      .ant-collapse-item {
+        border: unset !important;
+      }
+    }
   }
 
   &-basic-info {

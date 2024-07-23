@@ -227,6 +227,13 @@
     "CUSTOMER_NAME_WINFIT": "Tên Khách Hàng",
     "CUSTOMER_PHONE_NUMBER_WINFIT": "Số Điện Thoại"
   },
+  "WINFIT": {
+    "IMPACT_BMI_BMR": "Các yếu tố ảnh hưởng đến chỉ số BMI, BMR",
+    "ELEMENT_IMPACT_BMI_BMR": "<li><strong class='tt-koho'>Khối lượng cơ bắp:</strong> Người nhiều cơ bắp có chỉ số BMR cao hơn người ít cơ bắp.</li><li><strong class='tt-koho'>Kích thước (trọng lượng cơ thể):</strong> Cơ thể nặng hơn thì cần tiêu thụ nhiều calo hơn. Do đó, những người nặng cân hơn thường có BMR lớn hơn.</li><li><strong class='tt-koho'>Tuổi tác:</strong> Độ tuổi lớn thì mức độ trao đổi chất chậm hơn, tỷ lệ trao đổi chất của cơ thể sẽ thấp hơn so với người trẻ tuổi.</li><li><strong class='tt-koho'>Giới tính:</strong> Nam giới thường có nhiều cơ bắp hơn nữ giới, trọng lượng cơ thể nam giới cũng thường lớn hơn. Do vậy, nam giới thường có chỉ số cao BMR lớn hơn phụ nữ.</li><li><strong class='tt-koho'>Mức độ vận động:</strong> Càng hoạt động nhiều thì cơ thể càng tiêu hao năng lượng. Người tập thể dục thường xuyên có chỉ số BMR cao hơn.</li>",
+    "EXPLAIN_BMR": "Với những <strong class='tt-koho'>người nhiều cơ bắp hoặc cân nặng quá lớn</strong>, chỉ số BMR tính ra thường <strong class='tt-koho'>thấp hơn</strong> so với thực tế, do những tạng người như vậy cơ sẽ đốt cháy nhiều năng lượng hơn. Do đó, khuyến khích nhập chỉ số <strong class='tt-koho'>LBM (Lean body mass)</strong> để kết quả tính được chính xác hơn.",
+    "EXPLAIN_BMI": "Chỉ số BMI sẽ <strong class='tt-koho'>không chính xác</strong> nếu bạn là <strong class='tt-koho'>vận động viên</strong> hoặc <strong class='tt-koho'>người tập thể hình</strong> (bởi những người này thường có tỷ lệ cơ cao và các múi cơ luôn nặng hơn mỡ) và khi đó, chỉ số BMI của bạn sẽ nằm trong mức béo, rất béo. Và cũng <strong class='tt-koho'>không chính xác</strong> với <strong class='tt-koho'>phụ nữ đang mang thai, đang cho con bú</strong>hay những <strong class='tt-koho'>người vừa ốm dậy, bị phù, cụt chi.</strong>",
+    "NOTICE": "Lưu ý"
+  },
   "GENDER": {
     "INDEX": "Gender",
     "INDEX_WINFIT": "Giới Tính",
