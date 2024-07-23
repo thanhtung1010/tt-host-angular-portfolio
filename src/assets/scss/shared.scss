@@ -104,7 +104,11 @@
 }
 
 &-background-green {
-  background-color: $greenColor;
+  background-color: $greenColor !important;
+
+  &:hover {
+    background-color: $greenColor !important;
+  }
 }
 
 $size: 0,
